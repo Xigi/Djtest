@@ -1,0 +1,19 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block content %}
+    <h4>Список всех аббонентов</h4>
+    {% for el in task %}
+        <div class="alert alert-warning mt2">
+            <h5>{{ el.title }}</h5>
+            <h5>{{ el.task }}</h5>
+        </div>
+    {% endfor %}
+{% endblock %}
+
+
+
+
